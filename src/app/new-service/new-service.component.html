@@ -1,0 +1,5 @@
+<p>Show Running service</p>
+<button pButton type="button" label="Click" (click)="getServiceCall()"></button>
+<div *ngIf="resVar; else notVal">This respone is successfully called {{resVar}}</div>
+<ng-template #notVal>response is not successfully called</ng-template>
+<!-- <div>This respone is successfully called {{resVar}}</div> -->
